@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Career Brain Dump</title>
+<title>WorkLog</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -568,8 +568,8 @@ body {
   <!-- Sidebar -->
   <aside class="sidebar">
     <div class="sidebar-logo">
-      <h1>Career Brain Dump</h1>
-      <p class="version-lbl">your personal work archive</p>
+      <h1>WorkLog</h1>
+      <p class="version-lbl">your work, your story</p>
       <p style="font-size:11px;color:var(--text3);margin-top:6px;font-family:'DM Mono',monospace">built by <a href="https://www.linkedin.com/in/minhhongtran/" target="_blank" rel="noopener noreferrer" style="color:var(--text3);text-decoration:underline;text-underline-offset:2px;transition:color 0.15s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text3)'">Minh Tran</a></p>
       <div class="sidebar-actions">
         <button class="sidebar-action-btn" onclick="showView('howto')" title="How to use">
@@ -902,7 +902,7 @@ body {
 <!-- How to use modal -->
 <div class="modal-overlay" id="howtoModal">
   <div class="modal" style="max-width:600px">
-    <h3>How to use Career Brain Dump</h3>
+    <h3>How to use WorkLog</h3>
     <div style="font-size:13px;color:var(--text2);line-height:1.8;max-height:70vh;overflow-y:auto;padding-right:4px">
 
       <div style="margin-bottom:18px">
@@ -2008,7 +2008,7 @@ function downloadPrompt() {
 function exportJSON() {
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'career-brain-dump-' + new Date().toISOString().slice(0,10) + '.json';
+  a.download = 'worklog-backup-' + new Date().toISOString().slice(0,10) + '.json';
   a.click();
   showToast('Exported');
 }
